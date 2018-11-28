@@ -30,21 +30,42 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ########################################################################
 import rosegraphics as rg
 window = rg.TurtleWindow()
-ezrie = rg.SimpleTurtle('classic')
+ezrie = rg.SimpleTurtle('turtle')
 ezrie.pen = rg.Pen('pink',10)
 ezrie.speed = 10
 frank = rg.SimpleTurtle('turtle')
 frank.pen = rg.Pen('green',10)
 frank.speed = 15
 
-size_ezrie = 200
+size_ezrie = 75
 number_ezrie = 15
+size_frank = 100
+number_frank = 3
 
-for k in range(10)
+ezrie.pen_up()
+frank.pen_up()
+
+frank.right(45)
+frank.forward(-50)
+ezrie.forward(-100)
+
+ezrie.pen_down()
+frank.pen_down()
+
+for k in range(10):
     ezrie.draw_regular_polygon(number_ezrie,size_ezrie)
     ezrie.pen_up()
     ezrie.forward(10)
     ezrie.pen_down()
-    size_ezrie = size_ezrie-10
+    frank.draw_regular_polygon(number_frank,size_frank)
+    frank.pen_up()
+    frank.right(4*k)
+    frank.forward(7)
+    frank.pen_down()
+    size_ezrie = size_ezrie-5
+    number_ezrie = number_ezrie-1
+    size_frank = size_frank-7
+    number_frank = number_frank+1
+
 
 window.tracer(100)
