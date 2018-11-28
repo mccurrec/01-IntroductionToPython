@@ -36,3 +36,13 @@ ezrie.speed = 10
 frank = rg.SimpleTurtle('turtle')
 frank.pen = rg.Pen('green',10)
 frank.speed = 15
+
+size_ezrie = 200
+number_ezrie = 15
+
+for k in range(10)
+    ezrie.draw_regular_polygon(number_ezrie,size_ezrie)
+    ezrie.pen_up()
+    ezrie.forward(10)
+    ezrie.pen_down()
+    size_ezrie = size_ezrie-10
