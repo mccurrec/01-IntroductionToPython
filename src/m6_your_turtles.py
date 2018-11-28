@@ -29,5 +29,10 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #
 ########################################################################
 import rosegraphics as rg
+window = rg.TurtleWindow()
 ezrie = rg.SimpleTurtle('classic')
+ezrie.pen = rg.Pen('pink',10)
+ezrie.speed = 10
 frank = rg.SimpleTurtle('turtle')
+frank.pen = rg.Pen('green',10)
+frank.speed = 15
