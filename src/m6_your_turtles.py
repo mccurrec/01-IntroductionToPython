@@ -46,3 +46,5 @@ for k in range(10)
     ezrie.forward(10)
     ezrie.pen_down()
     size_ezrie = size_ezrie-10
+
+window.tracer(100)
