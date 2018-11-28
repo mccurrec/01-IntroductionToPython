@@ -132,7 +132,7 @@ boris.speed = 9
 boris.draw_regular_polygon(12,75)
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
