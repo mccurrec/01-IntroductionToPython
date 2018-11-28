@@ -31,10 +31,10 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 import rosegraphics as rg
 window = rg.TurtleWindow()
 ezrie = rg.SimpleTurtle('turtle')
-ezrie.pen = rg.Pen('pink',10)
-ezrie.speed = 10
+ezrie.pen = rg.Pen('pink',5)
+ezrie.speed = 15
 frank = rg.SimpleTurtle('turtle')
-frank.pen = rg.Pen('green',10)
+frank.pen = rg.Pen('green',5)
 frank.speed = 15
 
 size_ezrie = 75
@@ -48,6 +48,8 @@ frank.pen_up()
 frank.right(45)
 frank.forward(-50)
 ezrie.forward(-100)
+ezrie.right(90)
+
 
 ezrie.pen_down()
 frank.pen_down()
